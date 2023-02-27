@@ -72,7 +72,10 @@ export default defineComponent({
     methods: {
         async login() {
             var response = await this.$store.dispatch('login', this.dadosUsuario);
-            if (response.isSuccess) this.$router.push("/home");
+            if (response.isSuccess) { 
+                console.log("passssssou")
+                this.$router.push("/dashboard/" + response.data.userToken.id);
+            }
         },
     }
 })

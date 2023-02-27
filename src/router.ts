@@ -30,6 +30,14 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("./components/Perfil.vue"),
   },
   {
+    path: "/dashboard/:id",
+    name: "dashboard",
+    component: () => import("./components/Dashboard.vue"),
+    meta: {
+      requiresAuth: true,
+    },
+  },
+  {
     path: "/perfil/edicao/:id",
     name: "perfil-edicao",
     component: () => import("./components/PerfilEdicao.vue"),

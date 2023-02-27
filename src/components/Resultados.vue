@@ -40,8 +40,9 @@
                                     class="my-3" 
                                     v-bind="props"
                                     variant="outlined"
+                                    max-height="400px"
                                     :elevation="isHovering ? 10 : 0">
-                                        <v-img cover :src="item.fotoPrincipal" height="200px"></v-img>
+                                        <v-img cover :src="item.fotoPrincipal" height="150px"></v-img>
                                             <v-card-title v-text="item.titulo"></v-card-title>
                                             <v-card-text class="py-0" v-text="item.apresentacao"></v-card-text>
                                             <v-card-actions>

@@ -31,7 +31,7 @@ export const UserStore = {
         });
       }
       else {
-        context.commit('userIsLogged');
+        context.commit('setUserLogged');
         localStorage.setItem('authToken', result.data.accessToken);
         context.commit('setSuccessAlert', true);
         context.commit('setSuccessMessage', "Logado com sucesso");
