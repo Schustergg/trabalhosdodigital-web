@@ -11,6 +11,9 @@
                     <v-divider></v-divider>
                     <v-window v-model="step">
                         <v-window-item :value="1">
+                            <checkout/>
+                        </v-window-item>
+                        <v-window-item :value="1">
                             <v-form ref="formStepOne" class="px-2 py-2">
                                 <v-text-field
                                     label="Email"
@@ -173,13 +176,19 @@
     </v-container>
 </template>
 
+
+<script lang="ts" setup>
+import Checkout from "./Checkout.vue"
+</script>
+
 <script lang="ts">
 
 import { analyzeMetafile } from "esbuild";
 import { defineComponent, onMounted } from "vue";
 import { mapGetters } from 'vuex';
 import logo from '@/assets/logo.png';
-export default defineComponent({ 
+
+export default defineComponent({
 data() {
     return {
         logoImg: logo,
@@ -274,7 +283,8 @@ async mounted() {
 })
 </script>
 
-<style scoped>
+<style>
+
 .login-background {
 background-color: #ede2f2;
 }

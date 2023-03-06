@@ -17,7 +17,7 @@ import router from "@/router";
 import { VueMaskDirective } from 'v-mask';
 import { store, key } from "./store/index";
 import { QuillEditor } from '@vueup/vue-quill'
-import '@vueup/vue-quill/dist/vue-quill.snow.css';
+import '@vueup/vue-quill/dist/vue-quill.snow.css'
 
 const vMaskV2 = VueMaskDirective;
 const vMaskV3 = {

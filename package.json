@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
+    "@vueup/vue-quill": "^1.1.0",
     "axios": "^1.2.0",
+    "pagarme": "^4.31.0",
     "roboto-fontface": "*",
     "v-mask": "^2.3.0",
     "vue": "^3.2.38",
